@@ -10,6 +10,8 @@ This project provides a modified BIOS for the **Inspur NF5270M4** server motherb
 
 ![Front Panel](Doc/intel_24_pin_ssi_frontpanel_pinout.jpg)
 
+**WinRaid Forum official thread: https://winraid.level1techs.com/t/offer-inspur-server-board-nf5270m4-np5570m4-nf5460m4-bios-mod/103936**
+
 ## Key Features
 
 - Unlocked BIOS menus for advanced hardware control.
@@ -94,6 +96,8 @@ Thank you for your support!
 ## Description
 
 Ce projet fournit une version modifiée du BIOS pour la carte mère **Inspur NF5270M4**. L'objectif est de débloquer des fonctionnalités avancées, d'activer l'overclocking, et de permettre à la carte mère de fonctionner sans l'équipement officiel d'Inspur (comme les blocs d'alimentation doubles ou le châssis propriétaire). Le projet inclut des fichiers BIOS modifiés, des firmwares originaux, des outils et une documentation détaillée.
+
+**WinRaid Forum official thread: https://winraid.level1techs.com/t/offer-inspur-server-board-nf5270m4-np5570m4-nf5460m4-bios-mod/103936**
 
 ## Caractéristiques principales
 
