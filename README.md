@@ -8,6 +8,8 @@ This project provides a modified BIOS for the **Inspur NF5270M4** server motherb
 
 ![BIOS 4.1.29 Screenshot](Pictures/BIOS_4.1.29.png)
 
+![Front Panel](Doc/intel_24_pin_ssi_frontpanel_pinout.jpg)
+
 ## Key Features
 
 - Unlocked BIOS menus for advanced hardware control.
