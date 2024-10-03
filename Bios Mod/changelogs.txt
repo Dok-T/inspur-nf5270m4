@@ -1,0 +1,140 @@
+PREFACE:
+
+This BIOS mod is made to allow to use this motherboard beyond its limits and use it without Inspur related equipments such as dual PSU unit, chassis etc.
+If this bios mod and my researches helped you, consider donate to me :)
+
+BTC : 3Qy6PFGskaJhd2gbGSNQiGJ3doB51Fvg7S -- IN BTW WE TRUST -- 
+
+
+NOTE: If you are using this board for homelabing and not with official INSPUR equipments, please use the provided BMC Firmware (4.3.0 from NP5570M4). 
+        You can still revert back flashing the needed firmware depending on what inspur cahssis your'e using.
+
+NOTE2: If you flash this, DMI DATA might be overwritten. Please use AMI software to restore SMBIOS data. I give a txt example on how to fill it.
+
+NOTE for 4.1.29-2 BIOS: PLEASE READ!!! DO NOT FLASH THIS BIOS IF YOU DON'T HAVE PROPER COOLING SYSTEM AND REPASTED VRMS HEATSINK + CPU !!! THIS BIOS WON'T POST IF YOU INSTALL A E5 2600 V4 SERIES CPU!
+    EVEN IF OVERCLOCKING OPITIONS ARE ENABLED BY THOSE BIOSES, I'M NOT RESPONSIBLE FOR ANY DAMAGES, LOSSES, INSTABILITIES ISSUES !!! 
+
+
+GENERAL INFORMATIONS:
+
+Startup ACM found at base DE0000h
+ModuleType: 0002h
+ModuleSubtype: 0001h
+HeaderSize: 00000284h
+HeaderVersion: 00000000h
+ChipsetId: B002h
+Flags: 0000h
+ModuleVendor: 8086h
+Date: 06.02.2017
+ModuleSize: 00020000h
+AcmSvn: 0000h
+SeSvn: 0000h
+CodeControlFlags: 00000000h
+ErrorEntryPoint: 00000000h
+GdtMax: 00000020h
+GdtBase: 00001284h
+SegmentSel: 00000008h
+EntryPoint: 0000AAF9h
+KeySize: 00000100h
+ScratchSpaceSize: 0000023Ch
+ACM RSA Public Key Exponent: 11h
+ACM RSA Public Key:
+8307819686AD3389C5DA1FC8639E24E2555630726EB5C30B8B7DA2285F4BCFC6
+278092A19C9BC285231815228291DBF09D61F68E2A5D867050CC2FF7537E6859
+0EEDD6769D4C7906BB52EC3CEDBE9F03EECAC91303C46372006F2CD68BA70379
+4F43A33440A0EC044928309E12400496EC92E7E0F8BD1AFC959B848F52A31035
+EF0D2939B84B75EAFD016C2A6B308A76CE14B9BAF026C8A99BB75C4F8F009963
+26FD2B7E12DE4207B647EE54CDDC228E0B58E6E20A0CAA2FD88C8D930D300E0A
+283000480CAC01DA8255C85B802B2F58F407848E49C222AD33B9D0C05DEC674B
+DB6F9150CC55A5F20174858FC285A7EC4E40AABF28EDA44B7FAABA20F33AA8D3
+ACM RSA Signature:
+3D9E10651D9F773CE6ADB7B8FF49D29D62DBA9A5258EA8759FCFE01FD1C98889
+304C3C686864D50B66AE70B83EFAFCA596C1C985565453D49EA44C02786FD970
+4E53012FC971820D618FA7345342F758E5C3127F283B0151880871641B65E34B
+2AFF658F6D0E8811CBE32A2D1A6F5381AD65DCF2199BB190FE5F09B902DCE132
+EACFE2321F301B88EB548765582627F62409F0E911FC01CB06E633CDE956BE7C
+D9D652DD3EB6A39E37C278140551AA347622B3B352265A010DAFE9A67F60A017
+C356CC8EF1D0A01142FAB7C8A9044E8FAA7F81789733289F5AAF6A91374A34B6
+09528D47F972F03A85A69B6B3392347DC6CAB4334A65C1A59B4C94CAE47A4F0B
+
+
+
+4.1.27 - Initial release  09/29/2024
+
+- Updated Strings
+- Enabled PCH Temperature reporting
+- Unlocked menus
+- Enabled Overclocking Feature (can't test)
+- Enabled AES-NI by default
+- Enable by default hot plug onboard PCH SATA and sSATA (also unlocked menu to manage it)
+- Disabled BIOS LOCK
+
+4.1.28 - 10/01/2024
+
+- Updated Microcode
+
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                       Intel                                       ║
+╟─┬─────────┬─────┬──────────────────┬────────┬──────────┬─────┬──────┬────────┬────╢
+║#│   Type  │CPUID│    Platforms     │Revision│   Date   │State│ Size │ Offset │Last║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼────────┼────╢
+║1│Microcode│306F2│ 6F (0,1,2,3,5,6) │   43   │2019-03-01│ PRD │0x8800│0xEF17D0│ No ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼────────┼────╢
+║2│Microcode│306F1│EF (0,1,2,3,5,6,7)│   14   │2014-01-10│ PRD │0x8800│0xEF9FD0│Yes ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼────────┼────╢
+║3│Microcode│306F0│EF (0,1,2,3,5,6,7)│FFFF0017│2013-07-30│ PRE │0x6C00│0xF027D0│Yes ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼────────┼────╢
+║4│Microcode│406F1│EF (0,1,2,3,5,6,7)│B000036 │2019-03-02│ PRD │0x7800│0xF093D0│ No ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼────────┼────╢
+║5│Microcode│406F0│EF (0,1,2,3,5,6,7)│   14   │2015-07-02│ PRD │0x7C00│0xF10BD0│Yes ║
+╚═╧═════════╧═════╧══════════════════╧════════╧══════════╧═════╧══════╧════════╧════╝
+
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                                      Intel                                       ║
+╟─┬─────────┬─────┬──────────────────┬────────┬──────────┬─────┬──────┬───────┬────╢
+║#│   Type  │CPUID│    Platforms     │Revision│   Date   │State│ Size │ Offset│Last║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼───────┼────╢
+║1│Microcode│406F1│EF (0,1,2,3,5,6,7)│B000040 │2021-05-19│ PRD │0x8C00│  0x18 │Yes ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼───────┼────╢
+║2│Microcode│406F0│EF (0,1,2,3,5,6,7)│   14   │2015-07-02│ PRD │0x7C00│ 0x8C18│Yes ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼───────┼────╢
+║3│Microcode│306F2│ 6F (0,1,2,3,5,6) │   49   │2021-08-11│ PRD │0x9800│0x10818│Yes ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼───────┼────╢
+║4│Microcode│306F1│EF (0,1,2,3,5,6,7)│   14   │2014-01-10│ PRD │0x8800│0x1A018│Yes ║
+╟─┼─────────┼─────┼──────────────────┼────────┼──────────┼─────┼──────┼───────┼────╢
+║5│Microcode│306F0│EF (0,1,2,3,5,6,7)│FFFF0017│2013-07-30│ PRE │0x6C00│0x22818│Yes ║
+╚═╧═════════╧═════╧══════════════════╧════════╧══════════╧═════╧══════╧═══════╧════╝
+
+406F1 2011v3\cpu406F1_platEF_ver0B000040_2021-05-19_PRD_E5BABFDB.bin 
+406F0 2011v3\cpu406F0_platEF_ver00000014_2015-07-02_PRD_F22A3585.bin 
+306F2 2011v3\cpu306F2_plat6F_ver00000049_2021-08-11_PRD_79C6E826.bin 
+306F1 2011v3\cpu306F1_platEF_ver00000014_2014-01-10_PRD_9F835FBB.bin 
+306F0 2011v3\cpu306F0_platEF_verFFFF0017_2013-07-30_PRE_BFAEF932.bin 
+
+- Disabled FRB-2 Timer 
+- Disabled clearing log after reset
+- Unlocked more power management en RAM options
+- Fastboot memory training Enabled
+- Above 4G decoding Enabled 
+
+
+4.1.29 10/02/2024
+
+- Enabled UEFI only boot by default -> FIX for JViewer no display output
+- Disabled BMC by default -> FIX for PEI--IPMI Initialization BMC SELFTEST FAIL!!! (FASTER BOOT)
+- Updated Strings 
+- Fix blank option enable/disable in CPU informations 
+- Unlocked IntelME Debug options
+- Disabled F7 Boot option menu by default (Inspur Incloud Sphere related)
+- Updated bios version in 3FD1D3A2-99F7-420B-BC69-8BB1D492A332 - 16D0A23E-C09C-407D-A14A-AD058FDD0CA1 - 7ECD9C20-68B9-4A6F-B515-D64FF500B109 
+    HEX: 34 2e 31 2e 32 36 --> 34 2e 31 2e 32 39
+
+
+4.1.29-2
+
+- 4.1.29 based bios
+- Unlocked V3 CPUs Turbo boost HACK
+    NOTE: PLEASE READ!!! DO NOT FLASH THIS BIOS IF YOU DON'T HAVE PROPER COOLING SYSTEM AND REPASTED VRMS HEATSINK + CPU !!! THIS BIOS WON'T POST IF YOU INSTALL A E5 2600 V4 SERIES CPU!
+    EVEN IF OVERCLOCKING OPITIONS ARE ENABLED BY THOSE BIOSES, I'M NOT RESPONSIBLE FOR ANY DAMAGES, LOSSES, INSTABILITIES ISSUES !!! 
+
+- Multiple versions available. xxx-xx-xx is how much undervolting in mV is applied to: Vcore / Memory Controller voltage / Cache voltage. Example: -70mV offset to vcode / -50mV to mem ctrl / -50mV to CPU Cache
