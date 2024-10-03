@@ -14,7 +14,7 @@ This project provides a modified BIOS for the **Inspur NF5270M4** server motherb
 - Overclocking options enabled (use cautiously).
 - Turbo Boost unlocked for V3 CPUs. (Only -2 BIOSes)
 - Support for advanced storage and power management systems.
-- Reduced restrictions imposed by Inspur’s proprietary equipment (guide to flash correct BMC web firmware).
+- Reduced restrictions imposed by Inspur’s proprietary equipment. (Usage in a standard tower without Inspur server equipment by flashing the BMC 4.3.0)
 - **Fix for BMC Self-Test failure** during startup, drastically reducing boot time by disabling the BMC by default and some tweaks in bios (see changelogs.txt).
 - **UEFI boot mode enabled by default**: Fixes issues with JViewer's display output and allows full remote control via iKVM (JViewer) by disabling CSM (Compatibility Support Module).
 - Workaround for FRU / DMI Data not being properly set. Please go to Server Mgmt -> FRU Information -> SAVE FRU INFORMATION and set manualy informations like Serial number, Asset Tag, Board revision etc. Please powercycle the board to make it effective.
@@ -95,10 +95,10 @@ Ce projet fournit une version modifiée du BIOS pour la carte mère **Inspur NF5
 
 - Menus du BIOS débloqués pour un contrôle avancé du matériel.
 - Options d'overclocking activées (à utiliser avec précaution).
-- Turbo Boost débloqué pour les processeurs V3.
+- Turbo Boost débloqué pour les processeurs V3. (Seulement les bios avec un -2 à la fin)
 - Prise en charge des systèmes de gestion de stockage et d'alimentation avancés.
-- Réduction des restrictions imposées par l'équipement propriétaire d'Inspur.
-- **Correction du problème "BMC Self-Test failed"** au démarrage, réduisant considérablement le temps de démarrage en désactivant par défaut le BMC.
+- Réduction des restrictions imposées par l'équipement propriétaire d'Inspur. (Utilisation dans une tour standard sans l'équipement serveur Inspur en flashant le BMC 4.3.0)
+- **Correction du problème "BMC Self-Test failed"** au démarrage, réduisant considérablement le temps de démarrage en désactivant par défaut le BMC. (Voir changelogs.txt)
 - **Mode UEFI activé par défaut** : Corrige les problèmes d'affichage JViewer et permet un contrôle à distance complet via iKVM (JViewer) en désactivant le mode CSM (Compatibility Support Module).
 - - Solution pour les données FRU / DMI qui ne sont pas correctement définies. Veuillez aller dans **Gestion du Serveur** -> **Informations FRU** -> **ENREGISTRER LES INFORMATIONS FRU**, et renseigner manuellement les informations comme le numéro de série, la balise d'actif, la révision de la carte, etc. Veuillez redémarrer complètement la carte mère pour que cela prenne effet.
 
@@ -160,4 +160,4 @@ Les contributions sont les bienvenues ! Si vous avez des suggestions, des correc
 
 Si ce projet vous a été utile, n'hésitez pas à me soutenir en faisant un don :
 
-- **BTC** :
+- **BTC** : `3Qy6PFGskaJhd2gbGSNQiGJ3doB51Fvg7S`
