@@ -25,7 +25,7 @@ This project provides a modified BIOS for the **Inspur NF5270M4** server motherb
 
 ## Warnings
 
-- **DMI Data**: Flashing the BIOS may overwrite DMI data. Please use AMI software to restore SMBIOS data. An example `smbios.txt` is provided to help fill in this information.
+- **DMI Data**: Flashing the BIOS may overwrite DMI data. Please use AMI software to restore SMBIOS data. An example `smbios_example.txt` is provided to help fill in this information.
   
 - **Important for BIOS 4.1.29-2**:
   - **Do not flash this BIOS** if you do not have an adequate cooling system and have not repasted the VRMs heatsink and CPU.
@@ -111,7 +111,7 @@ Ce projet fournit une version modifiée du BIOS pour la carte mère **Inspur NF5
 
 ## Avertissements
 
-- **Données DMI** : Le flashage du BIOS peut écraser les données DMI. Utilisez un logiciel AMI pour restaurer les données SMBIOS. Un exemple `smbios.txt` est fourni pour vous aider à remplir ces informations.
+- **Données DMI** : Le flashage du BIOS peut écraser les données DMI. Utilisez un logiciel AMI pour restaurer les données SMBIOS. Un exemple `smbios_example.txt` est fourni pour vous aider à remplir ces informations.
   
 - **Important pour le BIOS 4.1.29-2** :
   - **Ne flashez pas ce BIOS** si vous n'avez pas un système de refroidissement adéquat et si vous n'avez pas remplacé la pâte thermique sur les VRM et le CPU.
