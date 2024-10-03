@@ -1,0 +1,7 @@
+Jumper Info:
+
+J46: CLR_CMOS
+J47: BIOS_WP (BIOS Write Protection)
+J15: ME_RECOVERY (Intel ME Recovery)
+J38: ME_FLASH (Intel ME Flash Mode)
+J9A1: TPM-HDR (TPM Header - to be confirmed)
