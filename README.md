@@ -56,6 +56,8 @@ This project provides a modified BIOS for the **Inspur NF5270M4** server motherb
 - **Turbo Boost unlocked** for V3 CPUs.
 - Multiple versions available: `xxx-xx-xx` represents the undervolting applied to Vcore/Memory Controller/Cache in millivolts.
 
+  **PLEASE READ FULL CHANGELOGS! AT: https://github.com/Dok-T/inspur-nf5270m4/blob/main/Bios%20Mod/changelogs.txt**
+
 ## Flashing Instructions
 
 1. Download the desired BIOS file from the appropriate release folder.
@@ -139,6 +141,8 @@ Ce projet fournit une version modifiée du BIOS pour la carte mère **Inspur NF5
 - Basé sur le BIOS 4.1.29.
 - **Turbo Boost débloqué** pour les processeurs V3.
 - Plusieurs versions disponibles : `xxx-xx-xx` représente l'undervolting appliqué à Vcore/Contrôleur mémoire/Cache en millivolts.
+
+  **MERCI DE LIRE TOUT LES CHANGELOG ICI! : https://github.com/Dok-T/inspur-nf5270m4/blob/main/Bios%20Mod/changelogs.txt**
 
 ## Instructions de Flash
 
